@@ -7,10 +7,10 @@ fun main() {
     """.trimIndent()
 
     val player: Array<String> = arrayOf("Arthur", "John", "Charles")
-    val playerAge: Array<Int> = arrayOf(30, 23, 29)
-    val jobCount: Array<Int?> = arrayOfNulls(4)
+//    val playerAge: Array<Int> = arrayOf(30, 23, 29)
+//    val jobCount: Array<Int?> = arrayOfNulls(4)
 
-    val range = 1..100
+//    val range = 1..100
     val downRange = 100 downTo 0 step 10
 
     println(welcomeWagon)
