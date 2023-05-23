@@ -41,7 +41,7 @@ fun order(customerName: String) {
                 1 -> {
                     println("\n==== WHAT SIZE DO YOU WANT TO UPGRADE? ====")
                     for (i in sizeUpDrinks.indices) {
-                        println("${i+1}. ${sizeUpDrinks[i].name} (+$${sizeUpDrinks[i].price})")
+                        println("${i + 1}. ${sizeUpDrinks[i].name} (+$${sizeUpDrinks[i].price})")
                     }
                     when (readln().toInt()) {
                         1 -> {
@@ -49,16 +49,19 @@ fun order(customerName: String) {
                             sizeUpgradePrice = 0.64F
                             customerSubTotal += sizeUpgradePrice
                         }
+
                         2 -> {
                             sizeUpgrade = "Grande"
                             sizeUpgradePrice = 1.24F
                             customerSubTotal += sizeUpgradePrice
                         }
+
                         3 -> {
                             sizeUpgrade = "Venti"
                             sizeUpgradePrice = 1.34F
                             customerSubTotal += sizeUpgradePrice
                         }
+
                         else -> {
                             println("Mr/Mrs. $customerName, you have not made a valid size selection :)")
                             return
