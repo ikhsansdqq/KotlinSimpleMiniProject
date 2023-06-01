@@ -1,43 +1,29 @@
 fun main() {
     var shouldExit = false
     val todoList = mutableListOf<String>()
-    var userToDo: String?
 
-    println("==== TO-DO LIST APP v1.89 ====")
+    println("==== TO-DO LIST APP v0.8 ====")
+//    DELETE THIS WHEN DONE
+    println(todoList)
     print("Please Enter your name: ")
     val name: String = readln()
     println("Welcome $name")
-
-    println("==== CHOOSE MENU ====\n1. Add Name\n2. Add Activity\n3. Add Address\n4. Exit Program")
-    print("Enter your choice: ")
     while (!shouldExit) {
+        println("==== CHOOSE MENU ====\n1. Add Name\n2. Add Activity\n3. Add Address\n4. Exit Program")
         print("Enter your choice: ")
         when (readln().toInt()) {
             1 -> {
-                // TODO: ADD TODO ITEM
-                print("Enter to-do list today: ")
-                userToDo = readlnOrNull()
-                if (userToDo != null) {
-                    todoList.add(userToDo)
-                }
+                println("Infokan nama")
             }
 
-            2 -> {
-                // TODO: VIEW ALL TODO ITEMS
-            }
-
-            3 -> {
-                // TODO: MARK A TODO ITEM AS COMPLETED
-            }
-
+            2 -> println("This is add activity")
+            3 -> println("This is address")
             4 -> {
-                // TODO: EXIT() PROGRAM
+                println("Exiting now...")
                 shouldExit = true
-            }
-
-            else -> {
-                println("Invalid number. Please enter rill number.")
             }
         }
     }
+//    DELETE THIS WHEN DONE
+    println(todoList)
 }
